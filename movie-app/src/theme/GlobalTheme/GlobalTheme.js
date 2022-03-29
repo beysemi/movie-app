@@ -1,4 +1,4 @@
-export const themeSettings = {
+const themeSettings = {
     colors : {
         primary50:'#EBE9FE',
         primary100:'#DEDBFD',
@@ -88,3 +88,4 @@ export const themeSettings = {
         white100:'#FFFFFF',
     }
 }
+export default themeSettings;

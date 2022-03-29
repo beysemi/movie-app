@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout";
+import Header from "../components/Header";
 
 export default function Home() {
   const Meta = {
@@ -10,6 +11,7 @@ export default function Home() {
   return (
     <>
       <Layout title={Meta.title} description={Meta.description} image={Meta.image}>
+        <Header/>
         <p>deneme</p>
       </Layout>
     </>
