@@ -1,5 +1,4 @@
 import * as React from "react";
-
 const SvgAdd = (props) => (
   <svg
     width={24}
@@ -14,6 +13,7 @@ const SvgAdd = (props) => (
       strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
+      {...props}
     />
   </svg>
 );

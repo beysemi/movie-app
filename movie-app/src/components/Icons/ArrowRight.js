@@ -15,6 +15,7 @@ const SvgArrowRight = (props) => (
       strokeMiterlimit={10}
       strokeLinecap="round"
       strokeLinejoin="round"
+      
     />
   </svg>
 );

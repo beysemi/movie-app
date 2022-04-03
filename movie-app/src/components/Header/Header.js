@@ -1,12 +1,17 @@
 import React from 'react';
-import {Image} from 'next/image';
-import styled from 'styled-components';
-// import {ArrowRight} from '../Icons';
+import Image from 'next/image';
+import Link from 'next/link';
+import styled , {keyframes} from 'styled-components';
 
 const HeaderWrapper = styled.header`
-    padding:16px 120px;
+    max-width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 12px;
 `;
-const Brand = styled.div`
+const BrandWrapper = styled.div`
     background-color: transparent;
 `;
 const Navigation = styled.nav`
@@ -19,27 +24,47 @@ const NavigationList = styled.ul`
 `;
 const NavigationItem = styled.li`
     padding: 12px 16px;
-    font-size: 16px;
-    line-height: 24px;
-    color: ${props => props.theme.colors.gray200};
     & + & {
         margin-left: 16px;
     }
 `;
+
+const NavigationLink = styled.a`
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+    color: ${({theme}) => theme.header.linkColor};
+    &:hover {
+        color: ${({theme}) => theme.header.linkHoverColor};
+    }
+`;
+
 
 
 const Header = () => {
     return (
         <>
             <HeaderWrapper>
-                <Brand>
-                    <Image src="/logo.svg" alt="logo"/>
-                </Brand>
+                <BrandWrapper>
+                    <Image src="/logo.svg" alt="logo" width={40} height={40}/>
+                </BrandWrapper>
                 <Navigation>
                     <NavigationList>
-                        <NavigationItem>Movies</NavigationItem>
-                        <NavigationItem>TV Shows</NavigationItem>
-                        <NavigationItem>Suggest me  </NavigationItem>
+                        <NavigationItem>
+                            <Link href="/movies">
+                                <NavigationLink>Movies</NavigationLink>
+                            </Link>
+                        </NavigationItem>
+                        <NavigationItem>
+                            <Link href="/tv-shows">
+                                <NavigationLink>TV Shows</NavigationLink>
+                            </Link>
+                        </NavigationItem>
+                        <NavigationItem>
+                            <Link href="/report">
+                                <NavigationLink>Report</NavigationLink>
+                            </Link>
+                        </NavigationItem>
                     </NavigationList>
                 </Navigation>
             </HeaderWrapper> 

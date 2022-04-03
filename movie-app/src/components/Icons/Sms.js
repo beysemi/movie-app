@@ -15,6 +15,7 @@ const SvgSms = (props) => (
       strokeMiterlimit={10}
       strokeLinecap="round"
       strokeLinejoin="round"
+      {...props}
     />
     <path
       d="m17 9-3.13 2.5c-1.03.82-2.72.82-3.75 0L7 9"
@@ -23,6 +24,7 @@ const SvgSms = (props) => (
       strokeMiterlimit={10}
       strokeLinecap="round"
       strokeLinejoin="round"
+      {...props}
     />
   </svg>
 );

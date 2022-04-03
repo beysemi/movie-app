@@ -14,6 +14,7 @@ const SvgVideoTick = (props) => (
       strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
+      {...props}
     />
     <path
       d="M23 18.5a4.5 4.5 0 0 1-1.54 3.38c-.79.7-1.82 1.12-2.96 1.12-1.07 0-2.06-.38-2.83-1.02h-.01A4.5 4.5 0 0 1 14 18.5c0-1.42.65-2.69 1.69-3.51A4.47 4.47 0 0 1 18.5 14c1.41 0 2.66.64 3.48 1.65.64.77 1.02 1.77 1.02 2.85Z"
@@ -22,6 +23,7 @@ const SvgVideoTick = (props) => (
       strokeMiterlimit={10}
       strokeLinecap="round"
       strokeLinejoin="round"
+      {...props}
     />
     <path
       d="m16.75 18.5 1.11 1.11 2.4-2.22"
@@ -29,6 +31,7 @@ const SvgVideoTick = (props) => (
       strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
+      {...props}
     />
   </svg>
 );

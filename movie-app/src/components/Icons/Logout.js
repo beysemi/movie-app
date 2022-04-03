@@ -15,6 +15,7 @@ const SvgLogout = (props) => (
       strokeMiterlimit={10}
       strokeLinecap="round"
       strokeLinejoin="round"
+      {...props}
     />
   </svg>
 );

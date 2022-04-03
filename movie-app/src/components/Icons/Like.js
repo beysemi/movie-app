@@ -13,6 +13,7 @@ const SvgLike = (props) => (
       stroke="#8E95A9"
       strokeWidth={1.5}
       strokeMiterlimit={10}
+      {...props}
     />
     <path
       d="M2.38 18.35v-9.8c0-1.4.6-1.9 2-1.9h1c1.4 0 2 .5 2 1.9v9.8c0 1.4-.6 1.9-2 1.9h-1c-1.4 0-2-.5-2-1.9Z"
@@ -20,6 +21,7 @@ const SvgLike = (props) => (
       strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
+      {...props}
     />
   </svg>
 );

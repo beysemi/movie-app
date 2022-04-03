@@ -14,6 +14,7 @@ const SvgLink = (props) => (
       strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
+      {...props}
     />
     <path
       d="M20.73 12A5.46 5.46 0 0 1 22 15.5c0 3.02-2.47 5.5-5.5 5.5h-5C8.48 21 6 18.52 6 15.5S8.47 10 11.5 10H14"
@@ -21,6 +22,7 @@ const SvgLink = (props) => (
       strokeWidth={1.5}
       strokeLinecap="round"
       strokeLinejoin="round"
+      {...props}
     />
   </svg>
 );
