@@ -1,6 +1,10 @@
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
+    *{
+        padding: 0;
+        margin: 0;
+    }
     body {
         font-family: 'Poppins', sans-serif;
         font-size: 16px;

@@ -62,7 +62,7 @@ const Header = () => {
                         </NavigationItem>
                         <NavigationItem>
                             <Link href="/report">
-                                <NavigationLink>Report</NavigationLink>
+                                <NavigationLink>Suggest me</NavigationLink>
                             </Link>
                         </NavigationItem>
                     </NavigationList>
