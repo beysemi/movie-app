@@ -33,3 +33,4 @@ const Navigation = () => {
         </NavigationContainer>
     )
 }
+export default Navigation;
