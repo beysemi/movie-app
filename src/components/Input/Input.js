@@ -17,6 +17,8 @@ const InputLabel = styled.label`
   left: 56px;
   top: 50%;
   transform: translateY(-50%);
+  user-select: none;
+  pointer-events: none;
   color: ${({ theme }) => theme.input.labelColor};
 `;
 const InputElement = styled.input`

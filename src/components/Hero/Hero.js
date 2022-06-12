@@ -3,15 +3,25 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import styled from "styled-components";
+import { up, down, between, only } from 'styled-breakpoints';
+
 import Input from "../Input";
-import Button from "../Button/Button";
-import { Add, Placeholder } from "../Icons";
+import { SearchNormal } from "../Icons";
+
 const Section = styled.section`
   background-color: transparent;
-  padding: 80px 0;
+  padding: 48px 0;
+  text-align: center;
+  ${up('lg')} {
+    padding: 96px 0;
+  }
 `;
 const HeroTitle = styled.h1`
   color: ${({ theme }) => theme.hero.titleColor};
+  margin-bottom: 16px;
+  ${up('lg')} {
+    margin-bottom: 24px;
+  }
 `;
 
 const HeroText = styled.p`
@@ -23,16 +33,14 @@ const Hero = () => {
     <Section>
       <Container>
         <Row>
-          <Col xs={12} md={12} lg={6}>
-            <HeroTitle>MaileHereko</HeroTitle>
+          <Col xs={12} md={12} lg={6} className="mx-auto">
+            <HeroTitle>Movie App</HeroTitle>
             <HeroText>
-              List of movies and TV Shows, I, Pramod Poudel have watched till
-              date. Explore what I have watched and also feel free to make a
-              suggestion. 😉
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </HeroText>
             <Input
-              leftIcon={<Add />}
-              labelText="Label"
+              leftIcon={<SearchNormal />}
+              labelText="Search Movies or TV Shows"
               placeholder="Ag. Avengers"
             />
           </Col>

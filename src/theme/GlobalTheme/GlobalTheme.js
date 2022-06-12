@@ -116,11 +116,16 @@ const themeSettings = {
       color: colors.grey400,
       labelColor: colors.grey600,
     },
-    navigation:{
+    tab: {
       backgroundColor: colors.black20,
       linkColor: colors.primary50,
       activeBgColor: colors.primary400,
+    },
+    slider: {
+      titleColor: colors.grey400,
+      arrowBgColor: colors.grey400,
     }
+
   },
   dark: {
     button: {
